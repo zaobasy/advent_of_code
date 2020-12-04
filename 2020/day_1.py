@@ -79,7 +79,7 @@ def get_multi_target_sum(in_list, target_sum, num_elems):
 
 def read_inputs():
 
-    file_path = './inputs/d1_p1_input.txt'
+    file_path = './inputs/d1_input.txt'
 
     with open(file_path, 'r') as in_file:
         lines = in_file.readlines()
@@ -107,7 +107,7 @@ def get_product(in_list, target, num_elems):
 def run():
     test_in_list = [1721, 979, 366, 299, 675, 1456]
     target = 2020
-    num_elems = 5
+    num_elems = 3
 
     test_result = get_product(test_in_list, target, num_elems)
 
