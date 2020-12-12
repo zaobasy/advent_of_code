@@ -87,14 +87,12 @@ def run_for_input(path):
     """
 
     in_list = read_inputs(path)
-    # for some reason this is mutating in_list???
     dist = find_jolts_between_all(in_list)
 
     print("The distribution is {}".format(dist))
     print("The product of 1 and 3 is {}".format(dist[1]*dist[3]))
 
-    in_list_again = read_inputs(path)
-    arrange_dict = count_number_of_arrangements(in_list_again)
+    arrange_dict = count_number_of_arrangements(in_list)
     #print(arrange_dict)
     print("The number of ways to connect is {}".format(arrange_dict[max(
                                                        arrange_dict.keys())]))

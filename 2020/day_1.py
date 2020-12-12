@@ -1,7 +1,10 @@
 import random
+from copy import deepcopy
 
 
 def quick_sort(in_list):
+
+    in_list = deepcopy(in_list)
 
     if len(in_list) <= 1:
         return in_list
